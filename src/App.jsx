@@ -11,8 +11,6 @@ import Contactus from "./pages/ContactUs";
 import Login from "./pages/Login";
 import AdminLayout from "./layouts/AdminLayout";
 
-const isLoggedIn = true;
-
 function App() {
   const Layout = () => {
     return (
@@ -30,15 +28,9 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route
-            path="/login"
-            element={isLoggedIn ? <Navigate to="/" /> : <Login />}
-          />
-          <Route
-            path="/"
-            element={isLoggedIn ? <AdminLayout /> : <Navigate to="/login" />}
-          >
+          <Route path="/" element={<AdminLayout />}>
             <Route element={<Layout />}>
+              <Route path="/login" element={<Login />} />
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
