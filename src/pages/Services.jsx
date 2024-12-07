@@ -1,10 +1,11 @@
 import React from 'react'
+import ServicesUi from '@/components/page_component/Services/ServicesUi'
 
 function Services() {
   return (
-    <div>
-      Services
-    </div>
+    <>
+      <ServicesUi />
+    </>
   )
 }
 

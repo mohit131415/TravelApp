@@ -1,10 +1,11 @@
 import React from 'react'
+import HomeUi from "@/components/page_component/Home/HomUi"
 
 function Home() {
   return (
-    <div>
-      Home
-    </div>
+    <>
+     <HomeUi /> 
+    </>
   )
 }
 
