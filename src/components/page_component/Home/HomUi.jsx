@@ -1,13 +1,17 @@
-import React from 'react'
-import Hero from '../../../assets/hero.jpg'
-
+import React from "react";
+import Hero from "../../../assets/hero.jpg";
 
 function HomUi() {
   return (
-    <div className="h-1/2 ">
-        <img className="object-contain h-[50%] w-full" src={Hero} alt="hero" />
-         </div>
-  )
+    <div className="relative h-[50vh]  sm:h-[40vh] md:h-[50vh] lg:h-[50vh]">
+      {/* Image container */}
+      <img
+        className="object-cover rounded-b-[50px] w-full h-full"
+        src={Hero}
+        alt="hero"
+      />
+    </div>
+  );
 }
 
-export default HomUi
+export default HomUi;

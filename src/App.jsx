@@ -16,7 +16,7 @@ function App() {
     return (
       <>
         <Header />
-        <main className="h-full w-full">
+        <main className="min-h-screen w-full">
           <Outlet />
         </main>
         <Footer />
