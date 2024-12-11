@@ -1,9 +1,10 @@
 import React from 'react'
+import Navbar from './ui/Navbar'
 
 function Header() {
   return (
-    <div>
-      Header
+    <div className='relative'>
+      <Navbar/>
     </div>
   )
 }

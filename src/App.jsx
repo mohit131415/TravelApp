@@ -10,12 +10,13 @@ import Services from "./pages/Services";
 import Contactus from "./pages/ContactUs";
 
 import AdminLayout from "./layouts/AdminLayout";
+import Navbar from "./components/ui/Navbar";
 
 function App() {
   const Layout = () => {
     return (
       <>
-        <Header />
+        <Header/>
         <main className="min-h-screen w-full">
           <Outlet />
         </main>
